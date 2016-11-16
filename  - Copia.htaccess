@@ -1,0 +1,6 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^olnatura\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.olnatura\.com$
+RewriteRule ^catalo\/\/?(.*)$ "http\:\/\/www\.olnatura\.com\/catalogo_2010\/index\.html$1" [R=301,L]
+
